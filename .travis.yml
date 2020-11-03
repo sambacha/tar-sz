@@ -1,0 +1,12 @@
+# travis
+os: linux
+dist: xenial
+
+language: generic
+
+git:
+  quiet: true
+  
+script:
+  - bash -c 'shopt -s globstar nullglob; shellcheck tgz.sh'
+  
