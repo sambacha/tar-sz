@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: ISC
+
 # Useful for, for example, versioning docker images built from subdirectories in a mono-repo.
 cd ${1:-.} || exit
 git ls-tree -r --name-only $(git rev-parse --symbolic-full-name --abbrev-ref HEAD) \
