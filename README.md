@@ -9,7 +9,7 @@ Generate a plain-text, encrypted archive that is secured using the public key of
 Usage is _similar_ to `tar`.
 
 ```bash
-    ssh-tgzx github-username archive-file [files | directories]
+ssh-tgzx github-username archive-file [files | directories]
 ```
 
 ### Extract
@@ -17,13 +17,13 @@ Usage is _similar_ to `tar`.
 Send the file to user who owns the identity and they simply:
 
 ```bash
-    bash ./archive-file identity-file
+bash ./archive-file identity-file
 ```
 
 ### List
 
 ```bash
-    bash ./archive-file identity-file t
+bash ./archive-file identity-file t
 ```
 
 ### Example
@@ -33,7 +33,7 @@ Send the file to user who owns the identity and they simply:
 To archive some files to send to me:
 
 ```bash
-    ssh-tgzx $GITHUB_USERNAME private.tgzx private-folder secret-file
+ssh-tgzx $GITHUB_USERNAME private.tgzx private-folder secret-file
 ```
 
 It is (relatively) safe to send the file to me via insecure channels.
@@ -43,14 +43,14 @@ It is (relatively) safe to send the file to me via insecure channels.
 I can extract is using:
 
 ```bash
-    bash ./private.tgzx ~/.ssh/id_rsa
+bash ./private.tgzx ~/.ssh/id_rsa
 ```
 
 ### List
 
 Or just list the contents:
 
-    bash ./private.tgzx ~/.ssh/id_rsa t
+bash ./private.tgzx ~/.ssh/id_rsa t
 
 ## tgzx
 
@@ -59,13 +59,13 @@ Or just list the contents:
 Usage is _similar_ to `tar`.
 
 ```bash
-    tgzx archive-file [files | directories]
+tgzx archive-file [files | directories]
 ```
 
 ## Extract
 
 ```bash
-    ./archive-file
+./archive-file
 ```
 
 ### Example
@@ -73,19 +73,19 @@ Usage is _similar_ to `tar`.
 #### Create secure archive
 
 ```bash
-    tgzx ssh.tgzx .ssh
+tgzx ssh.tgzx .ssh
 ```
 
 #### Extract
 
 ```bash
-    ./ssh.tgzx
+./ssh.tgzx
 ```
 
 #### List
 
 ```bash
-    ./ssh.tgzx t
+./ssh.tgzx t
 ```
 
 ## License 
