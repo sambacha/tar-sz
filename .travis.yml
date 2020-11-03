@@ -8,5 +8,5 @@ git:
   quiet: true
   
 script:
-  - bash -c 'shopt -s globstar nullglob; shellcheck **/*.{sh,ksh,bash}'
+  - bash -c 'shopt -s globstar nullglob; shellcheck tgz.sh'
   
