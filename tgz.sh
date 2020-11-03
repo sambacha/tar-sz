@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SPDX-License-Identifier: ISC
 tgzx() {
 	( ${#} >= 2; ) || { echo 'usage: tgzx archive-file [files | directories]'; return 1; }
 	# shellcheck disable=SC2016
