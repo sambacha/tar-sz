@@ -1,8 +1,16 @@
+# `tgz`
 
+[![Build Status](https://travis-ci.com/sambacha/tar-sz.svg?token=WSycjKTmZXAzmyXpmVgz&branch=master)](https://travis-ci.com/sambacha/tar-sz)
 
-Generate a plain-text, encrypted archive that is secured using the public key of a particular GitHub user.
+>  Generate a plain-text, encrypted archive that is secured using the public key of a particular GitHub user.
+
+* ssh-tgz
+* tgz
+
 
 ## ssh-tgz
+
+
 
 ### Archive and Secure
 
